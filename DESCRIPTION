@@ -1,0 +1,9 @@
+Package: bottle
+Title: From gmail to seafile
+Version: 0.0.0.9000
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: grad attachment in gmail account and drop it into a seafile folder.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
