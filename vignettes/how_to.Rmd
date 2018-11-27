@@ -18,17 +18,32 @@ knitr::opts_chunk$set(
 
 ```{r}
 library(bottle)
+library(seafile)
 ```
+
 
 
 First connect your gmail account
 
-```{r}
+```{r eval=FALSE}
 gmailr::gmail_auth()
 
 ```
 
-```{r}
-bottle::get_messages_id()
+Then ping your seafile repos
+
+```{r eval=FALSE}
+seafile::ping()
+```
+
+```{r eval=FALSE}
+get_messages_id() %>% 
+  import_files_from_gmail(path = tempdir()) %>% 
+  upload_to_seafile(repos_id_destination = get_repo_id(name = "My Library"))
+
+get_messages_id() %>%
+  remove_from_inbox()
+
+
 ```
 

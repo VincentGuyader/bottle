@@ -4,7 +4,7 @@
 #'
 #' @return
 #' @export
-#' @importFrom gmailr message save_attachments
+#' @importFrom gmailr message save_attachments modify_message
 #' @importFrom purrr compact map
 #' @importFrom magrittr %>%
 

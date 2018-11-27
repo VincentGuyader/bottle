@@ -4,15 +4,15 @@
 \alias{upload_to_seafile}
 \title{upload_to_seafile}
 \usage{
-upload_to_seafile(files, dossier_upload = dossier_upload(),
+upload_to_seafile(files, output_directory = folder_upload(),
   repos_id_destination = get_repo_id())
 }
 \arguments{
 \item{files}{files to upload}
 
-\item{dossier_upload}{path in the repos}
-
 \item{repos_id_destination}{repos id}
+
+\item{dossier_upload}{path in the repos}
 }
 \description{
 upload_to_seafile

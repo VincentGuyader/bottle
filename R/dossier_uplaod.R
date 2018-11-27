@@ -5,8 +5,7 @@
 #' @importFrom glue glue
 #' @export
 #'
-dossier_upload <-
-  function( path = "compta/justificatif frais {annee}/{dmonth}-{month}" ) {
+folder_upload <-  function( path = "compta/justificatif frais {annee}/{dmonth}-{month}" ) {
     glue::glue(
       path,
       annee = format(Sys.Date(), "%Y"),

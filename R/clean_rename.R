@@ -47,7 +47,7 @@ clean_rename <- function(from){
     invisible(vec)
   }
 
-  out <- clean_vec(from)
+  out <- file.path(dirname(from),clean_vec(basename(from)))
   file.rename(from=from,to = out)
   out
 }
