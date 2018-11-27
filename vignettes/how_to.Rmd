@@ -36,14 +36,19 @@ Then ping your seafile repos
 seafile::ping()
 ```
 
+Now upload attchment to seafile
+
 ```{r eval=FALSE}
 get_messages_id() %>% 
   import_files_from_gmail(path = tempdir()) %>% 
   upload_to_seafile(repos_id_destination = get_repo_id(name = "My Library"))
+```
 
+And know, remove email from email and put in inside seafile label
+
+```{r eval=FALSE}
 get_messages_id() %>%
   remove_from_inbox()
-
-
 ```
+
 
