@@ -43,7 +43,7 @@ get_messages_id() %>%
   upload_to_seafile(repos_id_destination = get_repo_id(name = "My Library"))
 ```
 
-And know, remove email from email and put in inside seafile label
+And remove email from inbox and put thme in seafile label
 
 ``` r
 get_messages_id() %>%
