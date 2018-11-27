@@ -11,6 +11,7 @@ Installation
 You can install the released version of bottle from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+remotes::install_github("VincentGuyader/seafile")
 remotes::install_github("VincentGuyader/bottle")
 ```
 
