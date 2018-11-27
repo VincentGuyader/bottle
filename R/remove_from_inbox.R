@@ -6,6 +6,7 @@
 #' @export
 #' @importFrom gmailr message save_attachments
 #' @importFrom purrr compact map
+#' @importFrom magrittr %>%
 
 remove_from_inbox <- function(messages_id = "Label_1",remove_labels="INBOX"){
   messages_id %>%

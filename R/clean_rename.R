@@ -3,7 +3,6 @@
 #'
 #' @param from file path to rename
 #'
-#' @return
 #' @export
 #'
 clean_rename <- function(from){

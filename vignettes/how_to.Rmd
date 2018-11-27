@@ -1,0 +1,34 @@
+---
+title: "How to"
+author: "Vincent Guyader"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(bottle)
+```
+
+
+First connect your gmail account
+
+```{r}
+gmailr::gmail_auth()
+
+```
+
+```{r}
+bottle::get_messages_id()
+```
+

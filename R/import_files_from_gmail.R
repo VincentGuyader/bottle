@@ -6,6 +6,7 @@
 #' @export
 #' @importFrom gmailr message save_attachments
 #' @importFrom purrr compact map
+#' @importFrom magrittr %>%
 import_files_from_gmail <- function(messages_id,path="."){
   messages_id %>%
   map(message) %>%

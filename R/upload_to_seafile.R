@@ -4,6 +4,7 @@
 #' @param dossier_upload path in the repos
 #' @param repos_id_destination repos id
 #' @importFrom purrr map
+#' @importFrom magrittr %>%
 #' @export
 #'
 upload_to_seafile <- function(files,

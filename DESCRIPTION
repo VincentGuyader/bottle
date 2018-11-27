@@ -10,4 +10,10 @@ LazyData: true
 Imports: 
     purrr,
     gmailr,
-    seafile
+    seafile,
+    magrittr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
