@@ -11,7 +11,9 @@ Imports:
     purrr,
     gmailr,
     seafile,
-    magrittr
+    magrittr,
+    readr,
+    glue
 Suggests: 
     knitr,
     rmarkdown

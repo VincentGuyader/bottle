@@ -4,7 +4,8 @@
 \alias{remove_from_inbox}
 \title{Title}
 \usage{
-remove_from_inbox(messages_id = "Label_1", remove_labels = "INBOX")
+remove_from_inbox(messages_id, add_labels = "Label_1",
+  remove_labels = "INBOX")
 }
 \arguments{
 \item{messages_id}{}
