@@ -13,7 +13,8 @@ Imports:
     seafile,
     magrittr,
     readr,
-    glue
+    glue,
+    thinkr
 Suggests: 
     knitr,
     rmarkdown
