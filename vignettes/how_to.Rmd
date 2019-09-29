@@ -16,9 +16,11 @@ knitr::opts_chunk$set(
 )
 ```
 
+
 ```{r}
 library(bottle)
 library(seafile)
+library(gmailr)
 ```
 
 
@@ -26,7 +28,11 @@ library(seafile)
 First connect your gmail account
 
 ```{r eval=FALSE}
-gmailr::gmail_auth()
+gm_auth_configure(path = "credentials.json")
+
+# Authenticate with the tokens in the copied cache
+gm_auth(email = TRUE, cache = ".secret")
+
 
 ```
 
@@ -41,7 +47,7 @@ Now upload attchment to seafile
 ```{r eval=FALSE}
 get_messages_id() %>% 
   import_files_from_gmail(path = tempdir()) %>% 
-  upload_to_seafile(repos_id_destination = get_repo_id(name = "My Library"))
+  upload_to_seafile(repos_id_destination = get_repo_id(name = "Pauline"))
 ```
 
 And know, remove email from email and put in inside seafile label
